@@ -30,7 +30,7 @@ const Header = () => {
           <h1 className="text-green-500 text-sm">Coins : 2,000</h1>
         </div>
         <Squares2X2Icon className="text-gray-500 cursor-pointer md:hidden" />
-        <HeartIcon className="text-slate-400 cursor-pointer" />
+        <HeartIcon className="text-slate-400 cursor-pointer hidden md:inline-grid" />
         <UserCircleIcon className="text-green-600 cursor-pointer" />
       </div>
     </div>
