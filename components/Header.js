@@ -3,16 +3,20 @@ import {
   MagnifyingGlassIcon,
   HeartIcon,
   CircleStackIcon,
+  ArchiveBoxIcon,
 } from "@heroicons/react/24/outline";
 import { Squares2X2Icon, UserCircleIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className="bg-slate-50 flex items-center justify-between p-2 shadow-lg">
       {/* Left - Logo */}
-      <div className="relative h-10 w-10">
-        <Image src="/logo.png" alt="logo.png" layout="fill" />
-      </div>
+      <Link href="/">
+        <div className="relative h-10 w-10">
+          <Image src="/logo.png" alt="logo.png" layout="fill" />
+        </div>
+      </Link>
 
       {/* Middle - Search */}
       <div className="relative flex items-center">
@@ -31,7 +35,10 @@ const Header = () => {
         </div>
         <Squares2X2Icon className="text-gray-500 cursor-pointer md:hidden" />
         <HeartIcon className="text-slate-400 cursor-pointer hidden md:inline-grid" />
-        <UserCircleIcon className="text-green-600 cursor-pointer" />
+        <ArchiveBoxIcon className="text-gray-500" />
+        <Link href="/login">
+          <UserCircleIcon className="text-green-600 h-8" />
+        </Link>
       </div>
     </div>
   );

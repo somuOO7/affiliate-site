@@ -5,6 +5,7 @@ import productImage1 from "@/public/product/1.jpg";
 import productImage2 from "@/public/product/2.jpg";
 import productImage3 from "@/public/product/3.jpg";
 import CustomButton from "@/components/CustomButton";
+import CustomInput from "@/components/CustomInput";
 
 export default function Home() {
   var features = ["Free shipping", "Electronics"];
@@ -51,10 +52,9 @@ export default function Home() {
         </div>
 
         {/* Coupon code field */}
-        <p>Have a coupon code? Enter here 👇🏻</p>
-        <input
+        <CustomInput
           placeholder="Enter your coupon code"
-          className="w-full px-4 py-2 my-2 text-sm rounded-md border-2 focus:outline-none focus:ring-0"
+          label="Have a coupon code? Enter here 👇🏻"
         />
       </div>
 
